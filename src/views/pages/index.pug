@@ -1,0 +1,17 @@
+extends ../auth.layout.pug
+
+block content
+    .intro
+        .container
+            .intro__block
+                .intro__content
+                    .intro__image
+                    .intro__about
+                        .intro__name Андрей Смирнов
+                        .intro__desk Личный сайт веб разработчикa
+                    include ../../sections/socials
+                +nav('nav', ["Мои работы","Обо мне", "Блог"])
+            +sign
+            +auth_btn('auth_btn')
+
+
