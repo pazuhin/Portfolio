@@ -7,4 +7,124 @@ block scripts
   script(src='about.bundle.js')
 
 block content
-  h1 Страничка "Обо Мне"  
+  section.hero
+    .container.container_hero
+        -
+          var socials = [
+              ['vk', 'https://vk.com'],
+              ['github', 'https://gh.com'],
+              ['in', 'https://in.com']
+          ]
+        ul.socials.hero__links
+          each item in socials
+            li.socials__item
+              a(href=`${item[1]}`).socials__link
+                +icon(item[0], 'socials__link-icon')
+        a(href="#").humb.hero__menu
+          .hero__menu-btn
+
+        .hero__user.hero__user_about
+          .intro__content
+            .intro__image
+            .intro__about
+              .intro__name Андрей Смирнов
+              .intro__desk Личный сайт веб разработчикa
+        .down-btn
+          a(href="#").down-btn__link
+            +icon('arrow_down','down-btn__img')
+
+  section.about
+    .container.container_about
+      .about__left
+        .about__triangle
+          svg(viewBox="0 0 500 100" preserveAspectRatio="none").triangle.triangle_fill_left
+            <polygon points="0 0, 500 100, 0 100"/> fill="#DDF5FF"/>
+        .about__block
+          .about__left-title
+            .block-title Обо мне
+              .block__bg
+                .block__bg-pic
+          .about__left-content
+            .user-description
+              .user-description__img
+                .user-description__img-pic
+              .user-description__data
+                .user-description__title
+                  .block-sub Кто я
+                .user-description__text.text-content
+                  p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                  p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+      .about__right
+        .about__triangle
+          svg(viewBox="0 0 500 100").triangle.triangle_fill_right
+            <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
+        .about__right-title
+          .block-sub Чем я могу быть вам полезен
+        .about__right-description.text-content
+          p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+        .about__right-content
+          -
+            var skills = [
+              ['Frontend',[['HTML5', 30], ['CSS3', 70], ['JavaScript & jQuery']]],
+              ['Backend',[['PHP', 30], ['MySQL', 70], ['Node.js & npm', 50], ['Mongo.db',]]],
+              ['Workflow',[['Git', 30], ['Gulp', 70], ['Bower', 50]]]
+            ]
+          ul.skills-list
+            each skillrow in skills
+              li.skills-list__item.skills-row
+                .skills-row__title=`${skillrow[0]}`
+                ul.skills-row__list
+                  each skill in skillrow[1]
+                    li.skills-row__item
+                      figure.skill
+                        svg(viewbox="0 0 120 120" preserveAspectRatio="none").skill__figure
+                          circle(cx="60" cy="60" r="50").skill__circle.skill__circle_under
+                          circle(cx="60" cy="60" r="50").skill__circle.skill__circle_above
+                        .skill__title=`${skill[0]}`
+
+  section.map
+    .container.container_map
+      .google-map
+        .map__info
+          .contacts
+            h2.contacts__title
+              .block-sub Контакты
+            address.contacts__data
+              ul.contacts__list
+                -
+                  var contacts = [
+                      ['skype', 'skype_kdn'],
+                      ['envelope2', 'astahov@gmail.com'],
+                      ['phone2', '+7 931 200 93 24'],
+                      ['map_marker', 'Новосибирск, ул.Инская, д.14']
+                  ]
+                each item in contacts
+                  li.contacts__item
+                    .contacts__icon
+                      +icon(item[0], 'contacts__icon-img')
+                    .contacts__title= item[1]
+    footer.footer.footer__about
+      .container.footer_container
+        .footer__col
+          .footer__text
+            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+        .footer__col.footer__col_center
+          .footer__col-border
+            +nav('nav-about', ["Мои работы", "Обо мне", "Блог", "Авторизация"])
+            ul.socials.footer__links
+              each item in socials
+                li.socials__item
+                  a(href=`${item[1]}`).socials__link
+                    +icon(item[0], 'footer__link-icon')
+            a(href="#").humb.hero__menu
+        .footer__col
+          blockquote
+            p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. <br> <span class="text">— Martin Golding</span>
+    +sign('ds;fklm')
+
+
+
+
+
+
+

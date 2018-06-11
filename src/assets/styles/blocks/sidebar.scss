@@ -1,0 +1,35 @@
+.sidebar {
+  text-align: end;
+  width: 70%;
+}
+
+.nav-blog__link {
+  text-decoration: none;
+  color: #455a64;
+}
+
+.nav-blog__item {
+  margin-bottom: 25px;
+}
+
+.nav-blog__item_active {
+  font-weight: bold;
+
+
+
+  .nav-blog__link {
+    color: #4e8839;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &:after {
+      background: #4e8839;
+      content: "";
+      display: block;
+      width: 3px;
+      transform: translateX(15px);
+      height: 40px;
+    }
+  }
+}
