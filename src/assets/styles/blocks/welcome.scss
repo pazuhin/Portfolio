@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  background: url(./assets/images/bg/bg.jpg) center center no-repeat;
+  background: url(assets/images/bg/bg.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   width: 100%;
@@ -73,7 +73,7 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  background-image: url(./assets/images/main/me.jpg);
+  background-image: url(assets/images/main/me.jpg);
   margin-bottom: 18px;
 }
 

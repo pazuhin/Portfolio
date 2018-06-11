@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: url(./assets/images/bg/bg.jpg) center center no-repeat;
+  background: url(assets/images/bg/bg.jpg) center center no-repeat;
   background-size: cover;
   overflow: hidden;
   width: 100%;
@@ -40,7 +40,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -80%);
-  background: url(./assets/images/bg/portfolio_header.png) center center no-repeat;
+  background: url(assets/images/bg/portfolio_header.png) center center no-repeat;
   width: 100%;
 }
 
