@@ -1,8 +1,8 @@
 
 @font-face {
   font-family: 'robotobold';
-  src: url('/assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-bold-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 
@@ -10,8 +10,8 @@
 
 @font-face {
   font-family: 'robotobold_italic';
-  src: url('/assets/fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-bolditalic-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-bolditalic-webfont.woff') format('woff');
   font-weight: bold;
   font-style: italic;
 
@@ -19,8 +19,8 @@
 
 @font-face {
   font-family: 'robotoitalic';
-  src: url('/assets/fonts/roboto-italic-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-italic-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-italic-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 
@@ -28,8 +28,8 @@
 
 @font-face {
   font-family: 'robotolight';
-  src: url('/assets/fonts/roboto-light-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-light-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-light-webfont.woff') format('woff');
   font-weight: lighter;
   font-style: normal;
 }
@@ -37,8 +37,8 @@
 
 @font-face {
   font-family: 'robotolight_italic';
-  src: url('/assets/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-lightitalic-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-lightitalic-webfont.woff') format('woff');
   font-weight: lighter;
   font-style: italic;
 
@@ -46,8 +46,8 @@
 
 @font-face {
   font-family: 'robotomedium';
-  src: url('/assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-medium-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-medium-webfont.woff') format('woff');
   //font-weight: medium;
   font-style: normal;
 
@@ -55,8 +55,8 @@
 
 @font-face {
   font-family: 'robotomedium_italic';
-  src: url('/assets/fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-mediumitalic-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-mediumitalic-webfont.woff') format('woff');
   font-weight: medium;
   font-style: italic;
 
@@ -64,8 +64,8 @@
 
 @font-face {
   font-family: 'robotoregular';
-  src: url('/assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
-  url('/assets/fonts/roboto-regular-webfont.woff') format('woff');
+  src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+  url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -73,8 +73,8 @@
 
 @font-face {
   font-family: 'fontawesomeregular';
-  src: url('/assets/fonts/fontawesome-webfont.woff2') format('woff2'),
-  url('/assets/fonts/-webfont.woff') format('woff');
+  src: url('./assets/fonts/fontawesome-webfont.woff2') format('woff2'),
+  url('./assets/fonts/-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -82,8 +82,8 @@
 
 @font-face {
   font-family: 'fontawesomeregular';
-  src: url('/assets/fonts/fontawesome-webfont-webfont.woff2') format('woff2'),
-  url('/assets/fonts/fontawesome-webfont-webfont.woff') format('woff');
+  src: url('./assets/fonts/fontawesome-webfont-webfont.woff2') format('woff2'),
+  url('./assets/fonts/fontawesome-webfont-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -94,8 +94,8 @@
 
 @font-face {
   font-family: 'sansus_webissimoregular';
-  src: url('/assets/fonts/sansus-webissimo-regular-webfont.woff2') format('woff2'),
-  url('/assets/fonts/sansus-webissimo-regular-webfont.woff') format('woff');
+  src: url('./assets/fonts/sansus-webissimo-regular-webfont.woff2') format('woff2'),
+  url('./assets/fonts/sansus-webissimo-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 

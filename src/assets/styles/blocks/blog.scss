@@ -44,7 +44,7 @@
 .blog-content__img-pic {
   width: 100%;
   height: 125px;
-  background-image: url(/assets/images/blog/code.jpg);
+  background-image: url(./assets/images/blog/code.jpg);
   background-repeat: no-repeat;
 }
 
@@ -73,7 +73,7 @@
   position: relative;
 
   &:before {
-    content: url("/assets/images/bg/blog_header.png");
+    content: url("./assets/images/bg/blog_header.png");
     display: block;
     position: absolute;
     top: 35%;
