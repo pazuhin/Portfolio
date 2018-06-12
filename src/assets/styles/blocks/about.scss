@@ -32,15 +32,17 @@
 .triangle_fill_left {
   position: absolute;
   width: 50%;
-  fill: #ebefe2;
-  top: 432px;
+  fill: #f4f5f0;
+  bottom: 0;
+  left: 0;
 }
 
 .triangle_fill_right {
   position: absolute;
   width: 50%;
   fill: #f4f5f0;
-  top: 432px;
+  bottom: 0;
+  right: 0;
 }
 
 .about__left-title {

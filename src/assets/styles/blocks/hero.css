@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$green".
-        on line 33 of hero.scss
+        on line 34 of hero.scss
 
-28:   width: 35px;
-29:   height: 25px;
-30:   fill: white;
-31: 
-32:   &:hover {
-33:     fill: $green;
-34:     transition: .3s;
-35:   }
-36: }
-37: 
-38: .hero__user_about {
+29:   width: 35px;
+30:   height: 25px;
+31:   fill: white;
+32: 
+33:   &:hover {
+34:     fill: $green;
+35:     transition: .3s;
+36:   }
+37: }
+38: 
+39: .hero__user_about {
 
 Backtrace:
-hero.scss:33
+hero.scss:34
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -78,4 +78,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$green\".\A         on line 33 of hero.scss\A \A 28:   width: 35px;\A 29:   height: 25px;\A 30:   fill: white;\A 31: \A 32:   &:hover {\A 33:     fill: $green;\A 34:     transition: .3s;\A 35:   }\A 36: }\A 37: \A 38: .hero__user_about {"; }
+  content: "Error: Undefined variable: \"$green\".\A         on line 34 of hero.scss\A \A 29:   width: 35px;\A 30:   height: 25px;\A 31:   fill: white;\A 32: \A 33:   &:hover {\A 34:     fill: $green;\A 35:     transition: .3s;\A 36:   }\A 37: }\A 38: \A 39: .hero__user_about {"; }

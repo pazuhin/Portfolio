@@ -1,0 +1,44 @@
+extends ../main.layout.pug
+
+block variables
+    - var title = 'Мои работы'
+
+block scripts
+    script(src='works.bundle.js')
+
+block content
+    section.hero.hero_works
+        .container.container_hero
+            -
+                var socials = [
+                ['vk', 'https://vk.com'],
+                ['github', 'https://gh.com'],
+                ['in', 'https://in.com']
+                ]
+            ul.socials.hero__links
+                each item in socials
+                    li.socials__item
+                        a(href=`${item[1]}`).socials__link
+                            +icon(item[0], 'socials__link-icon')
+            a(href="#").humb.hero__menu
+                .hero__menu-btn
+
+            .hero__user.hero__user_about
+                .intro__content
+                    .intro__image
+                    .intro__about
+                        .intro__name Андрей Смирнов
+                        .intro__desk Личный сайт веб разработчикa
+            .down-btn
+                a(href="#").down-btn__link
+                    +icon('arrow_down','down-btn__img')
+
+    section.works
+        .works__title
+        .works__left
+            .school
+                .school__title
+                .school__stack HTML, CSS, JAVASCRIPT
+                .school__link  Посмотреть сайт
+        .works__right
+

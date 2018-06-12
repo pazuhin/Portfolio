@@ -32,7 +32,11 @@ block content
     section.blog
         .container.container_blog
             .blog__triangle-left
+                svg(viewBox="0 0 500 100" preserveAspectRatio="none").triangle.triangle_fill_left
+                    <polygon points="0 0, 500 100, 0 100"/> fill="#DDF5FF"/>
             .blog__triangle-right
+                svg(viewBox="0 0 500 100").triangle.triangle_fill_right
+                    <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
             .blog__left
                 aside.sidebar
                     +nav('nav-blog', ["Самое важное в SASS","Приемы в вёрстке, без которых не обходится ни один сайт", "Самый необходимый набор Gulp плагинов", "Почему я выбрал Pug"], 0)
