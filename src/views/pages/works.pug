@@ -34,11 +34,19 @@ block content
                     +icon('arrow_down','down-btn__img')
 
     section.works
-        .works__title
-        .works__left
-            .school
-                .school__title
-                .school__stack HTML, CSS, JAVASCRIPT
-                .school__link  Посмотреть сайт
-        .works__right
+        .works__title Мои работы
+        .works__content
+            .works__left
+                .works__triangle
+                    svg(viewBox="0 0 500 100" preserveAspectRatio="none").triangle.triangle_fill_left
+                        <polygon points="0 0, 500 100, 0 100"/> fill="#DDF5FF"/>
+                .school
+                    .school__title Сайт школы онлайн образования
+                    .school__stack HTML, CSS, JAVASCRIPT
+                    .school__link
+                        a(href='#' class="school__link-site") Посмотреть сайт
+            .works__right
+                .works__triangle
+                    svg(viewBox="0 0 500 100").triangle.triangle_fill_right
+                        <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
 

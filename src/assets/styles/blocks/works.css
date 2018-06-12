@@ -1,0 +1,86 @@
+.works {
+  height: 100%; }
+  .works__title {
+    min-height: 190px;
+    color: #373e42;
+    font-size: 63px;
+    font-family: 'sansus_webissimoregular';
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 50px; }
+    .works__title:after {
+      content: '';
+      height: 4px;
+      width: 90px;
+      background: #373e42;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px; }
+    .works__title:before {
+      content: url("assets/images/bg/works_header.png");
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      transform: translateX(50%); }
+  .works__content {
+    display: flex;
+    height: 100%; }
+  .works__left, .works__left {
+    width: 50%;
+    display: flex; }
+  .works__left {
+    justify-content: center;
+    background-color: #ebefe2; }
+  .works__right {
+    width: 50%;
+    background-color: #e1e4d7; }
+
+.school {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25%; }
+  .school__title {
+    color: #566358;
+    font-size: 35px;
+    font-family: 'sansus_webissimoregular';
+    text-transform: uppercase;
+    text-align: center; }
+    .school__title:after {
+      content: '';
+      height: 2px;
+      width: 90px;
+      background: #566358;
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+  .school__stack {
+    color: #4e8839;
+    font-size: 16px;
+    margin-bottom: 55px; }
+  .school__link-site {
+    padding: 15px 20px 15px 20px;
+    background-color: #588550;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.42;
+    transition: .5s;
+    display: flex;
+    text-align: center;
+    min-width: 200px;
+    border-radius: 30px; }
+    .school__link-site:before {
+      content: url("assets/images/works/link.png");
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px; }
+    .school__link-site:hover {
+      background-color: #497f39; }
+
+/*# sourceMappingURL=works.css.map */
