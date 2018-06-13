@@ -71,14 +71,17 @@
   height: 25px;
   display: flex;
   align-items: center;
+  transition: .3s;
 }
 
 .hero__menu-btn {
+  transition: .3s;
   &, &:before, &:after {
     background: #fff;
     width: 35px;
     height: 4px;
     border-radius: 3px;
+    transition: .3s;
   }
 
   &:before, &:after  {
@@ -95,6 +98,24 @@
     bottom: 0;
   }
 }
+
+.active .hero__menu-btn {
+  height: 0;
+  transition: .3s;
+}
+
+.active .hero__menu-btn:before {
+  transform: rotate(45deg);
+  top: 50%;
+  transition: .3s;
+}
+
+.active .hero__menu-btn:after {
+  transform: rotate(-45deg);
+  bottom: 35%;
+  transition: .3s;
+}
+
 
 .down-btn {
   display: block;
