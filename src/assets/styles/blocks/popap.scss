@@ -1,0 +1,58 @@
+.popap-page {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgba(108, 156, 90, 0.7);
+  height: 100%;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.popap-menu {
+  text-align: center;
+  margin-top: 130px;
+
+  &__item {
+    margin-bottom: 40px;
+    position: relative;
+
+    &:after {
+      content: '';
+      height: 2px;
+      width: 95px;
+      background: #fff;
+      display: block;
+      left: 140px;
+      position: absolute;
+      top: 100%;
+      opacity: 0;
+      transition: 0.3s;
+
+    }
+
+    &:hover&:after {
+      opacity: 1;
+      transition: 0.3s;
+    }
+   }
+  }
+
+.popap-menu__link {
+  text-decoration: none;
+  font-family: 'sansus_webissimoregular';
+  text-transform: uppercase;
+  font-size: 63px;
+  color: #fff;
+  position: relative;
+}
+
+.is-active {
+  transition: .3s;
+  z-index: 99;
+  opacity: 1;
+}

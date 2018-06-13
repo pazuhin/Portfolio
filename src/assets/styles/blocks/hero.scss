@@ -72,10 +72,12 @@
   display: flex;
   align-items: center;
   transition: .3s;
+  z-index: 999;
 }
 
 .hero__menu-btn {
   transition: .3s;
+
   &, &:before, &:after {
     background: #fff;
     width: 35px;
