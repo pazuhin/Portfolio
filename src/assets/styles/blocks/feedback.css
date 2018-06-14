@@ -1,0 +1,151 @@
+.feedback {
+  height: 100%;
+  position: relative;
+  background: url(assets/images/works/bg-down.png) center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%; }
+  .feedback:before {
+    content: url("assets/images/works/list1.png");
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 60%;
+    left: 24%; }
+  .feedback:after {
+    content: url("assets/images/works/list2.png");
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 60%;
+    left: 80%; }
+  .feedback:before {
+    content: url("assets/images/works/list3.png");
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 30%;
+    left: 20%; }
+  .feedback__up {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px; }
+  .feedback__title {
+    color: #373e42;
+    font-size: 63px;
+    font-family: 'sansus_webissimoregular';
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 25px; }
+    .feedback__title:after {
+      content: '';
+      height: 4px;
+      width: 90px;
+      background: #373e42;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px; }
+  .feedback__review {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .feedback__left, .feedback__right {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .feedback__left .feedback__avatar {
+    background-image: url("assets/images/works/koval.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  .feedback__right .feedback__avatar {
+    background-image: url("assets/images/works/saban.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px; }
+  .feedback__text {
+    line-height: 1.8;
+    margin-bottom: 25px; }
+  .feedback__user-name {
+    font-style: italic;
+    color: #4e8839;
+    font-weight: bold;
+    padding-left: 10px; }
+  .feedback__left {
+    margin-right: 25px; }
+
+.feedback__down {
+  display: flex;
+  justify-content: center; }
+
+.form {
+  padding-top: 25px;
+  width: 380px;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(218, 219, 214, 0.5);
+  border-radius: 15px; }
+  .form__title {
+    color: #373e42;
+    font-size: 35px;
+    font-family: 'sansus_webissimoregular';
+    text-align: center;
+    text-transform: uppercase; }
+    .form__title:after {
+      content: '';
+      height: 4px;
+      width: 90px;
+      background: #373e42;
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      margin-bottom: 25px; }
+
+input {
+  border-radius: 30px;
+  outline: none;
+  padding: 15px 20px;
+  margin: 0 20px;
+  border: none;
+  margin-bottom: 20px; }
+
+textarea {
+  resize: none;
+  outline: none;
+  border-radius: 30px;
+  min-height: 140px;
+  margin-bottom: 20px;
+  padding: 24px 0 0.25rem 18px;
+  border: none;
+  margin: 0 20px 25px 20px; }
+
+.form__down-btns {
+  display: flex;
+  flex-direction: row; }
+
+.submit, .reset {
+  width: 100%;
+  height: 45px;
+  background: #729b63;
+  color: #fff;
+  transition: .3s; }
+  .submit:hover, .reset:hover {
+    background: #659753; }
+
+.submit {
+  border-right: 2px solid #a2bd9d; }
+
+/*# sourceMappingURL=feedback.css.map */

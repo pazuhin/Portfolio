@@ -49,4 +49,41 @@ block content
                 .works__triangle
                     svg(viewBox="0 0 500 100").triangle.triangle_fill_right
                         <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
+                .works__up
+                    .works__up-img
+                .works__down
+                    .works__down-img
+                        .works__down-left
+                            a(href="#" class=".works__down-left-link")
+                                +icon ('portf_arrow_down', 'works__down-btn')
+                        .works__down-right
+                            a(href="#" class=".works__down-right-link")
+                                +icon ('portf_arrow_up', 'works__down-up-btn')
+    section.feedback
+        .feedback__up
+            .feedback__title Что обо мне говорят
+            .feedback__review
+                .feedback__left
+                    .feedback__avatar
+                    .feedback__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .feedback__user
+                        .feedback__user-name Ковальчук Дмитрий
+                        .feedback__user-prof - основатель Loftschool
+                .feedback__right
+                    .feedback__avatar
+                    .feedback__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .feedback__user
+                        .feedback__user-name Сабанцев Владимир
+                        .feedback__user-prof - преподаватель
+        .feedback__down
+            form.form
+                .form__title Связаться со мной
+                input(type="text" value="" name="name" placeholder='Имя')
+                input(type="text" value="" name="name" placeholder='Email')
+                textarea(name="msg" placeholder="Ваше сообщение")
+                .form__down-btns
+                    button(type="submit" value="" class="submit" name="submit-btn") Отправить
+                    button(type="reset" value="" name="btn-clear" class="reset") Очистить
+
+
 
