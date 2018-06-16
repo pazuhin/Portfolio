@@ -71,6 +71,7 @@
 
 .hero__user_blog {
   position: relative;
+  transform: translate(-50%,-80%);
 
   &:before {
     content: url("assets/images/bg/blog_header.png");
@@ -79,4 +80,8 @@
     top: 35%;
     left: -17%;
   }
+}
+
+.blog__triangle-left .triangle_fill_left {
+fill: #fff;
 }

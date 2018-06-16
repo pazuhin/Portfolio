@@ -57,12 +57,16 @@
   padding: 9px 0; }
 
 .hero__user_blog {
-  position: relative; }
+  position: relative;
+  transform: translate(-50%, -80%); }
   .hero__user_blog:before {
     content: url("assets/images/bg/blog_header.png");
     display: block;
     position: absolute;
     top: 35%;
     left: -17%; }
+
+.blog__triangle-left .triangle_fill_left {
+  fill: #fff; }
 
 /*# sourceMappingURL=blog.css.map */

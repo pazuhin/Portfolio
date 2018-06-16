@@ -47,7 +47,7 @@
 
 .block__bg {
   background: url(assets/images/bg/about_header.png) center center no-repeat;
-  background-size: cover;
+  background-size: 100%;
   width: 100%;
   min-height: 115px;
   position: absolute;

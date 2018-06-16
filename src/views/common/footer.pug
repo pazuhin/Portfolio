@@ -4,13 +4,8 @@ footer.footer
             .footer__text
                 p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
         .footer__col.footer__col_center
-            +nav('nav-about', ["Мои работы", "Обо мне", "Блог", "Авторизация"])
-            ul.socials.footer__links
-                each item in socials
-                    li.socials__item
-                        a(href=`${item[1]}`).socials__link
-                            +icon(item[0], 'footer__link-icon')
-            a(href="#").humb.hero__menu
+            +nav('nav-about', [['Мои работы', 'works.html'], ['Обо мне', 'about.html'], ['Блог', 'blog.html'], ['Авторизация', 'index.html']])
+            include ../../sections/socials
         .footer__col
             blockquote
                 p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. <br> <span class="text">— Martin Golding</span>

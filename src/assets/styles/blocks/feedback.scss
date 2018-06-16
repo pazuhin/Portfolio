@@ -1,5 +1,4 @@
 .feedback {
-  height: 100%;
   position: relative;
   background: url(assets/images/works/bg-down.png) center center no-repeat;
   background-size: cover;
@@ -51,6 +50,21 @@
     position: relative;
     padding-top: 50px;
     margin-bottom: 25px;
+    padding: 0 35%;
+    line-height: 1;
+    margin-top: 35px;
+
+    &:before {
+      background: url(assets/images/bg/about_header.png) center center no-repeat;
+      background-size: 100%;
+      content: "";
+      height: 170px;
+      position: absolute;
+      top: -20px;
+      width: 470px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
     &:after {
       content: '';
@@ -116,6 +130,7 @@
 .feedback__down {
   display: flex;
   justify-content: center;
+  margin-bottom: 160px;
 }
 
 .form {
@@ -178,6 +193,7 @@ textarea {
   background: #729b63;
   color: #fff;
   transition: .3s;
+  outline: 0;
 
   &:hover {
     background: #659753;
@@ -186,4 +202,16 @@ textarea {
 
 .submit {
   border-right:2px solid #a2bd9d;
+}
+
+.feedback__down-link {
+  position: absolute;
+  bottom: 19%;
+
+  &:after {
+    content: url("assets/images/works/arrow_up.png");
+    display: block;
+    width: 30px;
+    height: 20px;
+  }
 }

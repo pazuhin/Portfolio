@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$grey".
-        on line 107 of welcome.scss
+        on line 109 of welcome.scss
 
-102: }
-103: 
-104: .socials__icon {
-105:   height: 25px;
-106:   width: 35px;
-107:   fill:  $grey;
-108:   cursor: pointer;
-109: 
-110:   &:hover {
-111:     fill: $green;
-112:     transition: .3s;
+104: }
+105: 
+106: .socials__icon {
+107:   height: 25px;
+108:   width: 35px;
+109:   fill:  $grey;
+110:   cursor: pointer;
+111: 
+112:   &:hover {
+113:     fill: $green;
+114:     transition: .3s;
 
 Backtrace:
-welcome.scss:107
+welcome.scss:109
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -67,4 +67,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 107 of welcome.scss\A \A 102: }\A 103: \A 104: .socials__icon {\A 105:   height: 25px;\A 106:   width: 35px;\A 107:   fill:  $grey;\A 108:   cursor: pointer;\A 109: \A 110:   &:hover {\A 111:     fill: $green;\A 112:     transition: .3s;"; }
+  content: "Error: Undefined variable: \"$grey\".\A         on line 109 of welcome.scss\A \A 104: }\A 105: \A 106: .socials__icon {\A 107:   height: 25px;\A 108:   width: 35px;\A 109:   fill:  $grey;\A 110:   cursor: pointer;\A 111: \A 112:   &:hover {\A 113:     fill: $green;\A 114:     transition: .3s;"; }

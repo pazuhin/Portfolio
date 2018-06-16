@@ -38,6 +38,8 @@
   text-decoration: none;
   color: #fff;
   font-weight: bold; }
+  .nav-about__link:hover {
+    text-decoration: underline; }
 
 .footer__text {
   color: #e8e9e9;

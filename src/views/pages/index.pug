@@ -4,13 +4,45 @@ block content
     .intro
         .intro__main
             .intro__block
-                .intro__content
-                    .intro__image
-                    .intro__about
-                        .intro__name Андрей Смирнов
-                        .intro__desk Личный сайт веб разработчикa
-                    include ../../sections/socials
-                +nav('nav', ["Мои работы","Обо мне", "Блог"])
+                .flip
+                    .intro__font
+                        .intro__content
+                            .intro__image
+                            .intro__about
+                                .intro__name Андрей Смирнов
+                                .intro__desk Личный сайт веб разработчикa
+                            include ../../sections/socials
+                        +nav('nav', [['Мои работы', 'works.html'],['Обо мне', 'about.html'], ['Блог', 'blog.html']])
+                    .intro__back
+                        form.form-welcome
+                            .form-welcome__title Авторизуйтесь
+                            .form__col
+                                input(type="text" value="" name="name" placeholder='Логин')
+                                .login
+                                    +icon('login', 'form__login')
+                                .bg
+                            .form__col
+                                input(type="password" value="" name="name" placeholder='Пароль')
+                                .password
+                                    +icon('password', 'form__login')
+                                .bg
+                            .form__col
+                                label
+                                    input(type="checkbox" class="checkbox" name="checkbox")
+                                    span.checkbox-custom
+                                    span Я человек
+                            .form__col
+                                span Вы точно не робот ?
+                            .form__col
+                                label.form___radio
+                                    input(type="radio" value="yes" id="radio-btn" name="radio1" class="radio")
+                                    span.radio-custom
+                                    span Да
+                                label.form___radio
+                                    input(type="radio" value="no" id="radio-btn-1" name="radio1" class="radio")
+                                    span.radio-custom
+                                    span Не уверен
+                        +nav('nav', [['На главную', 'index.html'],['Войти']])
             +sign
             +auth_btn('auth_btn')
 

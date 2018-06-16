@@ -50,6 +50,10 @@
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .footer__text {
