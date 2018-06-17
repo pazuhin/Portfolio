@@ -50,14 +50,16 @@ block content
                     svg(viewBox="0 0 500 100").triangle.triangle_fill_right
                         <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
                 .works__up
+                    img(src="assets/images/bg/works_big.png")
                 .works__down
-                    .works__down-img
-                        .works__down-left
-                            a(href="#" class="works__down-left-link")
-                                +icon('portf_arrow_down', 'works__down-btn')
-                        .works__down-right
-                            a(href="#" class="works__down-right-link")
-                                +icon('portf_arrow_up', 'works__down-up-btn')
+                    .works__down-left
+                        img(src="assets/images/bg/works_ioga.png" class="works__down-left-pic")
+                        a(href="#" class="works__down-left-link")
+                            +icon('portf_arrow_down', 'works__down-btn')
+                    .works__down-right
+                        img(src="assets/images/bg/works_int.png" class="works__down-right-pic")
+                        a(href="#" class="works__down-right-link")
+                            +icon('portf_arrow_up', 'works__down-up-btn')
     section.feedback
         .feedback__up
             .feedback__title Что обо мне говорят
