@@ -6,12 +6,12 @@ var inroBack = document.querySelector('#auth');
 authBtn.addEventListener('click', function (e) {
     e.preventDefault();
     authBtnBlock.classList.add("hidden");
-    flip.classList.add("active");
+    flip.classList.add("active_flip");
 })
 
 inroBack.addEventListener('click', function (e) {
     e.preventDefault();
     authBtnBlock.classList.remove("hidden");
-    flip.classList.remove("active");
+    flip.classList.remove("active_flip");
 })
 

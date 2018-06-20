@@ -1,24 +1,28 @@
 /*
-Error: Undefined variable: "$grey".
-        on line 125 of welcome.scss
+Error: Undefined mixin 'phones'.
+        on line 109 of welcome.scss, in `phones'
+        from line 109 of welcome.scss
 
-120: }
-121: 
-122: .socials__icon {
-123:   height: 25px;
-124:   width: 35px;
-125:   fill:  $grey;
-126:   cursor: pointer;
-127: 
-128:   &:hover {
-129:     fill: $green;
-130:     transition: .3s;
+104:   font-size: 28px;
+105:   font-weight: 500;
+106:   margin-bottom: 5px;
+107:   color: #fff;
+108: 
+109:   @include phones {
+110:     font-size: 21px;
+111:   }
+112: }
+113: 
+114: .intro__desk {
 
 Backtrace:
-welcome.scss:125
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+welcome.scss:109:in `phones'
+welcome.scss:109
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
@@ -67,4 +71,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grey\".\A         on line 125 of welcome.scss\A \A 120: }\A 121: \A 122: .socials__icon {\A 123:   height: 25px;\A 124:   width: 35px;\A 125:   fill:  $grey;\A 126:   cursor: pointer;\A 127: \A 128:   &:hover {\A 129:     fill: $green;\A 130:     transition: .3s;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 109 of welcome.scss, in `phones'\A         from line 109 of welcome.scss\A \A 104:   font-size: 28px;\A 105:   font-weight: 500;\A 106:   margin-bottom: 5px;\A 107:   color: #fff;\A 108: \A 109:   @include phones {\A 110:     font-size: 21px;\A 111:   }\A 112: }\A 113: \A 114: .intro__desk {"; }

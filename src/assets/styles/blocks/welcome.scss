@@ -6,6 +6,7 @@
   width: 100%;
   height: 100%;
 
+
   &:before {
     background: -moz-linear-gradient(top, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0) 100%);
     background: -webkit-linear-gradient(top, rgba(0,0,0,0.32) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0) 100%);
@@ -73,7 +74,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 380px;
+  max-width: 95%;
   z-index: 10;
 }
 
@@ -104,6 +105,10 @@
   font-weight: 500;
   margin-bottom: 5px;
   color: #fff;
+
+  @include phones {
+    font-size: 21px;
+  }
 }
 
 .intro__desk {
@@ -111,6 +116,15 @@
   font-family: robotoregular;
   margin-bottom: 25px;
   color: #c7ccca;
+
+  @include tablets {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  @include phones {
+    text-align: center;
+  }
 }
 
 .socials__list {
@@ -157,6 +171,10 @@
   display: block;
   text-align: center;
 
+  @include phones {
+    font-size: 14px;
+  }
+
   &:hover {
     background-color: #497f39;
   }
@@ -168,10 +186,27 @@
 
   &:first-child {
     min-width: 154px;
+
+    @include tablets {
+      min-width: 145px;
+    }
+
+    @include phones {
+      min-width: 130px;
+    }
+
   }
 
   &:nth-child(2) {
     min-width: 124px;
+
+    @include tablets {
+      min-width: 115px;
+    }
+
+    @include phones {
+      min-width: 100px;
+    }
   }
 
   &:last-child {
@@ -179,7 +214,7 @@
   }
 }
 
-.sign {
+.welcome__sign {
   color: #fff;
   display: flex;
   align-items: flex-end;
@@ -187,6 +222,15 @@
   flex: 1;
   margin-bottom: 4%;
   font-family: robotoregular;
+
+  @include tablets {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  @include phones {
+  text-align: center;
+  }
 }
 
 .auth_btn {
@@ -194,6 +238,12 @@
   top: 25px;
   right: 70px;
   z-index: 10;
+
+  @media (max-width: 480px) {
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+  }
 }
 
 .auth_btn__link {
@@ -207,6 +257,15 @@
   text-align: center;
   border: 1px solid white;
   border-radius: 30px;
+
+  @include tablets {
+    padding: 12px 27px;
+  }
+
+  @include phones {
+    padding: 10px 0px;
+    font-size: 14px;
+  }
 
   &:hover {
     background-color: #588550;
@@ -222,10 +281,26 @@
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   position: relative;
+
+  @include tablets {
+    width: 350px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  @include phones {
+    width: 300px;
+    margin: 0 auto;
+    max-width: 100%;
+ }
 }
 
-.active {
+.active_flip {
   transform: rotateY(180deg);
+
+  @include tablets {
+    width: 350px;
+  }
 }
 
 .hidden {

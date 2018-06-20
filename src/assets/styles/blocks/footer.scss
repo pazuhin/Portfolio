@@ -7,14 +7,34 @@
 .footer_container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+
+  @include big-tablets {
+    flex-basis: 100%;
+  }
+
+  @media (max-width: 590px) {
+    flex-direction: column;
+  }
 }
 
 .footer__col {
-  width: 50%;
+  flex: 1;
   display: flex;
 
   &:first-child {
     padding-top: 20px;
+    
+    @media (max-width: 590px) {
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  &:nth-child(3) {
+    @include big-tablets {
+  flex-basis: 100%;
+    }
   }
 }
 
@@ -22,18 +42,38 @@
   flex-direction: column;
   align-items: stretch;
   padding: 20px 0 40px 0;
+
+  @media (max-width: 590px) {
+   padding-bottom: 0;
+  }
 }
 
 .footer__col-border {
   border-left: 1px solid #757a7d;
   border-right: 1px solid #757a7d;
   padding-left: 30px;
+
+  @include big-tablets {
+    border-right: none;
+  }
+
+  @media (max-width: 590px) {
+    border-top: 1px solid #757a7d;
+    border-left: none;
+    border-bottom: 1px solid #757a7d;
+    padding: 15px 0;
+  }
 }
 
 .footer__link-icon {
   width: 35px;
   height: 25px;
   fill: #a9acad;
+
+  @media (max-width: 590px) {
+    width: 35px;
+    height: 25px;
+  }
 
   &:hover {
     fill: white;
@@ -44,12 +84,27 @@
 .nav-about__list, .footer__links {
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 590px) {
+    justify-content: center;
+  }
+}
+
+.nav-about__list {
+  @include big-tablets {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 .nav-about__link {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+
+  @include tablets {
+    font-size: 14px;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -60,6 +115,13 @@
   color: #e8e9e9;
   font-weight: 300;
   width: 360px;
+
+
+  @include tablets {
+    font-size: 14px;
+    line-height: 1.8;
+    width: 95%;
+  }
 }
 
 blockquote {
@@ -67,14 +129,28 @@ blockquote {
   font-family: 'robotolight_italic';
   font-weight: 300;
   color: #a1a7a5;
+
+  @include tablets {
+    font-size: 14px;
+  }
+
+  @media (max-width: 590px) {
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 .text {
   font-weight: bold;
+
 }
 
 .nav-about__item {
   margin-right: 7%;
+
+  @media (max-width: 590px) {
+    margin-right: 0;
+  }
 }
 
 .nav-about__list {

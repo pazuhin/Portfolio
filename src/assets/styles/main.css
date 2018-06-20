@@ -3,7 +3,8 @@ Error: Undefined variable: "$text-color".
         on line 9 of layout/base.scss
         from line 3 of main.scss
 
-4: @import './blocks/*.scss';
+4: @import './layout/media.scss';
+5: @import './blocks/*.scss';
 
 Backtrace:
 layout/base.scss:9
@@ -72,4 +73,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text-color\".\A         on line 9 of layout/base.scss\A         from line 3 of main.scss\A \A 4: @import './blocks/*.scss';"; }
+  content: "Error: Undefined variable: \"$text-color\".\A         on line 9 of layout/base.scss\A         from line 3 of main.scss\A \A 4: @import './layout/media.scss';\A 5: @import './blocks/*.scss';"; }

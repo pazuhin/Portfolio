@@ -1,6 +1,14 @@
 .hero_blog {
   min-height: 440px !important;
   margin-bottom: 70px;
+
+  @include tablets {
+    margin-bottom: 50px;
+  }
+
+  @include phones {
+    margin-bottom: 30px;
+  }
 }
 
 .hero__user_blog {
@@ -15,6 +23,10 @@
   font-family: 'sansus_webissimoregular';
   color: #fff;
   text-transform: uppercase;
+
+  @include tablets {
+    font-size: 49px;
+  }
 
   &:after {
     content: '';
@@ -42,4 +54,8 @@
 .blog__left {
   display: flex;
   justify-content: flex-end;
+
+  @include tablets {
+    display: none;
+  }
 }

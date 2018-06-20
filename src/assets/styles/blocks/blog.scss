@@ -3,18 +3,33 @@
   flex-direction: row;
 }
 
+.sidebar {
+  flex: 1;
+}
+
 .blog__left {
-  width: 25%;
+  width: 40%;
+  max-width: 11.875rem;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .blog__right {
-  width: 70%;
+  width: 60%;
   margin-left: 135px;
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-top: -5px;
   max-width: 980px;
+
+  @include tablets {
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .blog-content {
@@ -28,17 +43,36 @@
   font-family: 'sansus_webissimoregular';
   color: #455a64;
   margin-bottom: 25px;
+
+  @include tablets {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  @include phones {
+    font-size: 21px;
+    margin-bottom: 15px;
+  }
 }
 
 .blog-content__date {
   color: #4e8839;
   margin-bottom: 20px;
+
+  @include tablets {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
 }
 
 .blog-content__text p {
   margin-bottom: 15px;
   line-height: 1.7;
   max-width: 880px;
+
+  @include tablets {
+    font-size: 14px;
+  }
 }
 
 .blog-content__img-pic {
@@ -49,10 +83,29 @@
 }
 
 .blog-content__item {
-  margin-bottom: 140px;
+  &:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #ecebe4;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    @include tablets {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
 
   &:last-child {
     margin-bottom: 65px;
+
+    &:after {
+      content: '';
+      height: 0;
+    }
   }
 }
 
@@ -67,6 +120,11 @@
   justify-content: center;
   margin-bottom: 0 !important;
   padding: 9px 0;
+
+  @include tablets {
+    text-align: center;
+    font-size: 14px;
+  }
 }
 
 .hero__user_blog {
@@ -78,10 +136,25 @@
     display: block;
     position: absolute;
     top: 35%;
-    left: -17%;
+    left: -30%;
   }
 }
 
 .blog__triangle-left .triangle_fill_left {
-fill: #fff;
+  fill: #fff;
+  left: 0;
+  position: absolute;
+  width: 50%;
+  bottom: 0;
 }
+
+.blog__triangle-right .triangle_fill_right {
+  bottom: 0;
+  fill: #fff;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
+
+
+

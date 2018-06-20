@@ -6,7 +6,7 @@ Error: Invalid CSS after "&:hover": expected "{", was "&:after"
 
 33:       opacity: 0;
 34:       transition: 0.3s;
-35: 
+35:       transform: translateX(-50%);
 36:     }
 37: 
 38:     &:hover&:after {
@@ -87,4 +87,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"&:hover\": expected \"{\", was \"&:after\"\A        \A        \"&:after\" may only be used at the beginning of a compound selector.\A         on line 38 of popap.scss\A \A 33:       opacity: 0;\A 34:       transition: 0.3s;\A 35: \A 36:     }\A 37: \A 38:     &:hover&:after {\A 39:       opacity: 1;\A 40:       transition: 0.3s;\A 41:     }\A 42:    }\A 43:   }"; }
+  content: "Error: Invalid CSS after \"&:hover\": expected \"{\", was \"&:after\"\A        \A        \"&:after\" may only be used at the beginning of a compound selector.\A         on line 38 of popap.scss\A \A 33:       opacity: 0;\A 34:       transition: 0.3s;\A 35:       transform: translateX(-50%);\A 36:     }\A 37: \A 38:     &:hover&:after {\A 39:       opacity: 1;\A 40:       transition: 0.3s;\A 41:     }\A 42:    }\A 43:   }"; }

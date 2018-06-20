@@ -30,6 +30,11 @@
   height: 25px;
   fill: white;
 
+  @include phones {
+    width: 25px;
+    height: 20px;
+  }
+
   &:hover {
     fill: $green;
     transition: .3s;
@@ -43,6 +48,7 @@
   transform: translate(-50%, -80%);
   background: url(assets/images/bg/portfolio_header.png) center center no-repeat;
   width: 100%;
+  background-size: 100%;
 }
 
 .hero__user .intro__content {
@@ -55,6 +61,11 @@
   font-size: 35px;
   font-family: 'sansus_webissimoregular';
   letter-spacing: 1.5px;
+  width: 330px;
+
+  @include phones {
+    font-size: 21px;
+  }
 }
 
 .menu-btn {
@@ -73,6 +84,10 @@
   align-items: center;
   transition: .3s;
   z-index: 999;
+
+  @include phones {
+    height: 20px;
+  }
 }
 
 .hero__menu-btn {
@@ -84,6 +99,11 @@
     height: 4px;
     border-radius: 3px;
     transition: .3s;
+
+    @include phones {
+      width: 27px;
+      height: 3px;
+    }
   }
 
   &:before, &:after  {

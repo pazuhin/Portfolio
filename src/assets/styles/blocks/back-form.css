@@ -1,108 +1,74 @@
-.form-welcome__title {
-  text-align: center;
-  font-size: 35px;
-  font-family: 'sansus_webissimoregular';
-  text-transform: uppercase;
-  color: white; }
-  .form-welcome__title:after {
-    content: '';
-    height: 2px;
-    width: 95px;
-    background: white;
-    display: block;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 25px; }
+/*
+Error: Undefined mixin 'phones'.
+        on line 8 of back-form.scss, in `phones'
+        from line 8 of back-form.scss
 
-.form__col {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  color: #fff;
-  position: relative; }
-  .form__col:last-child {
-    margin-bottom: 40px; }
-  .form__col input {
-    width: 100%;
-    margin-bottom: 0;
-    position: relative;
-    padding-left: 65px; }
+3:   font-size: 35px;
+4:   font-family: 'sansus_webissimoregular';
+5:   text-transform: uppercase;
+6:   color: white;
+7: 
+8:   @include phones {
+9:     font-size: 30px;
+10:   }
+11: 
+12:   &:after {
+13:     content: '';
 
-.checkbox, .radio {
-  display: none; }
-
-.checkbox-custom {
-  position: relative;
-  width: 23px;
-  height: 23px;
-  background-color: #6c9c5a;
-  border-radius: 3px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px; }
-
-.checkbox:checked + .checkbox-custom:before {
-  content: url("assets/images/intro/check.png");
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 2px;
-  bottom: 2px;
-  left: 50%;
-  transform: translateX(-50%); }
-
-.radio-custom {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  position: relative;
-  background-color: white;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px; }
-
-.radio:checked + .radio-custom:before {
-  background: #6c9c5a;
-  border-radius: 50%;
-  bottom: 2px;
-  content: "";
-  display: block;
-  height: 10px;
-  position: absolute;
-  top: 50%;
-  width: 10px;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.form___radio {
-  margin-right: 40px; }
-  .form___radio:last-child {
-    margin-right: 0; }
-
-.form__login {
-  width: 15px;
-  height: 15px;
-  fill: #c4cbcd; }
-
-.bg {
-  width: 45px;
-  height: 46px;
-  background-color: #f0efe9;
-  position: absolute;
-  left: 20px;
-  border-bottom-left-radius: 50%;
-  border-top-left-radius: 50%; }
-
-.login {
-  position: absolute;
-  left: 10%;
-  z-index: 5;
-  top: 25%; }
-
-.password {
-  position: absolute;
-  left: 10%;
-  z-index: 5;
-  top: 25%; }
-
-/*# sourceMappingURL=back-form.css.map */
+Backtrace:
+back-form.scss:8:in `phones'
+back-form.scss:8
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/plugin.rb:82:in `update_stylesheets'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/bin/scss:13:in `<top (required)>'
+C:/Ruby24-x64/bin/scss:23:in `load'
+C:/Ruby24-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'phones'.\A         on line 8 of back-form.scss, in `phones'\A         from line 8 of back-form.scss\A \A 3:   font-size: 35px;\A 4:   font-family: 'sansus_webissimoregular';\A 5:   text-transform: uppercase;\A 6:   color: white;\A 7: \A 8:   @include phones {\A 9:     font-size: 30px;\A 10:   }\A 11: \A 12:   &:after {\A 13:     content: '';"; }

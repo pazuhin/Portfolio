@@ -27,12 +27,12 @@
       width: 95px;
       background: #fff;
       display: block;
-      left: 140px;
+      left: 50%;
       position: absolute;
       top: 100%;
       opacity: 0;
       transition: 0.3s;
-
+      transform: translateX(-50%);
     }
 
     &:hover&:after {
@@ -49,6 +49,15 @@
   font-size: 63px;
   color: #fff;
   position: relative;
+
+  @include tablets {
+    font-size: 49px;
+    margin-bottom: 15px;
+  }
+
+  @include phones {
+    font-size: 35px;
+  }
 }
 
 .is-active {

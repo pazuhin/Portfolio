@@ -5,6 +5,10 @@
   text-transform: uppercase;
   color: white;
 
+  @include phones {
+    font-size: 30px;
+  }
+
   &:after {
     content: '';
     height: 2px;
@@ -23,6 +27,18 @@
   margin-bottom: 20px;
   color: #fff;
   position: relative;
+
+  &:first-child {
+    @include tablets {
+      font-size: 14px;
+    }
+  }
+
+  &:nth-child(2) {
+    @include tablets {
+      font-size: 14px;
+    }
+  }
 
   &:last-child {
     margin-bottom: 40px;
@@ -89,6 +105,10 @@
 
 .form___radio {
   margin-right: 40px;
+
+  @include phones {
+    margin-right: 30px;
+  }
 
   &:last-child {
     margin-right: 0;

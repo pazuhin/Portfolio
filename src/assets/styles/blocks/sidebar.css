@@ -1,13 +1,24 @@
 .sidebar {
   text-align: end;
-  width: 70%; }
+  flex: 1; }
+
+.nav-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.nav-blog__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
 
 .nav-blog__link {
   text-decoration: none;
   color: #455a64; }
 
 .nav-blog__item {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  font-weight: 300; }
 
 .nav-blog__item_active {
   font-weight: bold; }
