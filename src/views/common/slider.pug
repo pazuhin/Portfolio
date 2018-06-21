@@ -1,0 +1,29 @@
+script(type="text/x-template")#slider
+    .slider
+        info
+        display
+        buttons
+
+script(type="text/x-template")#slider-info
+    .slider__info-container
+        .slider__about
+            .slider__info
+                .slider__info-title
+                    .subtitle Сайт школы онлайн образования
+            .slider__info-skills HTML, CSS, JAVASCRIPT
+            .slider__info-button
+                a(href="#").button Посмотреть сайт
+
+script(type="text/x-template")#slider-display
+    .slider-display
+        img(src="assets/images/bg/works_big.png" title="big-pic").slider__big-pic
+
+script(type="text/x-template")#slider-buttons
+    .slider-buttons
+        .slider-button
+            .slider-button-img-wrap
+                img(src="assets/images/bg/works_ioga.png" title="ioga").slider__button-pic
+        .slider-button.slider-button--next
+            .slider-button-img-wrap
+                img(src="assets/images/bg/works_int.png" title="int").slider__button-pic
+

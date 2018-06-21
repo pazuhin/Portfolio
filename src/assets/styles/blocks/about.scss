@@ -101,6 +101,10 @@
   position: absolute;
   top: 0;
 
+  @media (max-width: 500px) {
+    top: -25px;
+  }
+
   @include phones {
     top: -35px;
   }
@@ -148,6 +152,10 @@
 .user-description__img {
   margin-bottom: 40px;
 
+  @include tablets {
+    margin-bottom: 20px;
+  }
+
   @include phones {
     margin-bottom: 0px;
   }
@@ -177,6 +185,10 @@
 
 .block-title {
   position: relative;
+
+  @media (max-width: 500px) {
+    font-size: 49px;
+  }
 
   &:after {
     content: '';
@@ -239,12 +251,13 @@
   @include tablets {
     padding-right: 10%;
     padding-left: 10%;
+    padding-top: 15px;
   }
 
   @include phones {
     padding-right: 2.5%;
     padding-left: 2.5%;
-    padding-top: 30px;
+    padding-top: 15px;
   }
 }
 

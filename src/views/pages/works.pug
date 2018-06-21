@@ -1,5 +1,6 @@
 extends ../main.layout.pug
 
+
 block variables
     - var title = 'Мои работы'
 
@@ -33,33 +34,15 @@ block content
                 a(href="#").down-btn__link
                     +icon('arrow_down','down-btn__img')
 
-    section.works
+    .works
         .works__title Мои работы
-        .works__content
-            .works__left
-                .works__triangle
-                    svg(viewBox="0 0 500 100" preserveAspectRatio="none").triangle.triangle_fill_left
-                        <polygon points="0 0, 500 100, 0 100"/> fill="#DDF5FF"/>
-                .school
-                    .school__title Сайт школы онлайн образования
-                    .school__stack HTML, CSS, JAVASCRIPT
-                    .school__link
-                        a(href='#' class="school__link-site") Посмотреть сайт
-            .works__right
-                .works__triangle
-                    svg(viewBox="0 0 500 100").triangle.triangle_fill_right
-                        <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
-                .works__up
-                    img(src="assets/images/bg/works_big.png")
-                .works__down
-                    .works__down-left
-                        img(src="assets/images/bg/works_ioga.png" class="works__down-left-pic")
-                        a(href="#" class="works__down-left-link")
-                            +icon('portf_arrow_down', 'works__down-btn')
-                    .works__down-right
-                        img(src="assets/images/bg/works_int.png" class="works__down-right-pic")
-                        a(href="#" class="works__down-right-link")
-                            +icon('portf_arrow_up', 'works__down-up-btn')
+        .works__title-bg
+        svg(viewBox="0 0 500 100" preserveAspectRatio="none").triangle.triangle_fill_left
+            <polygon points="0 0, 500 100, 0 100"/> fill="#DDF5FF"/>
+        svg(viewBox="0 0 500 100").triangle.triangle_fill_right
+            <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
+    .slider-container
+        #slider-component
     section.feedback
         .feedback__up
             .feedback__title Что обо мне говорят
@@ -104,4 +87,5 @@ block content
                         p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. <br> <span class="text">— Martin Golding</span>
         +sign('sing-works')
     include ../../sections/popap
+    include ../common/slider.pug
 

@@ -10,7 +10,7 @@ Error: Undefined mixin 'phones'.
 32: 
 33:   @include phones {
 34:     width: 25px;
-35:     height: 25px;
+35:     height: 20px;
 36:   }
 37: 
 38:   &:hover {
@@ -71,4 +71,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 33 of hero.scss, in `phones'\A         from line 33 of hero.scss\A \A 28: .socials__link-icon {\A 29:   width: 35px;\A 30:   height: 25px;\A 31:   fill: white;\A 32: \A 33:   @include phones {\A 34:     width: 25px;\A 35:     height: 25px;\A 36:   }\A 37: \A 38:   &:hover {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 33 of hero.scss, in `phones'\A         from line 33 of hero.scss\A \A 28: .socials__link-icon {\A 29:   width: 35px;\A 30:   height: 25px;\A 31:   fill: white;\A 32: \A 33:   @include phones {\A 34:     width: 25px;\A 35:     height: 20px;\A 36:   }\A 37: \A 38:   &:hover {"; }

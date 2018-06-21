@@ -13,6 +13,10 @@
     position: absolute;
     top: 60%;
     left: 24%;
+
+    @include tablets {
+      display: none;
+    }
   }
 
   &:after {
@@ -23,22 +27,22 @@
      position: absolute;
      top: 60%;
      left: 80%;
-   }
 
-  &:before {
-    content: url("assets/images/works/list3.png");
-    display: block;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 30%;
-    left: 20%;
-  }
+    @include tablets {
+      display: none;
+    }
+   }
 
   &__up {
     display: flex;
     flex-direction: column;
     margin-bottom: 70px;
+    margin: 0 2.5%;
+    margin-bottom: 70px;
+
+    @include tablets {
+      margin-bottom: 45px;
+    }
   }
 
   &__title {
@@ -54,6 +58,30 @@
     line-height: 1;
     margin-top: 35px;
 
+    @media screen and (max-width: 1200px) {
+      padding: 0 28%;
+    }
+
+    @media screen and (max-width: 890px) {
+      padding: 0 20%;
+    }
+
+    @include tablets {
+      font-size: 49px;
+      width: 430px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 0 ;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 430px) {
+      width: 100%;
+    }
+
     &:before {
       background: url(assets/images/bg/about_header.png) center center no-repeat;
       background-size: 100%;
@@ -64,6 +92,15 @@
       width: 470px;
       left: 50%;
       transform: translateX(-50%);
+
+      @include tablets {
+        top: -45px;
+        width: 420px;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 300px;
+      }
     }
 
     &:after {
@@ -81,6 +118,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__left, &__right {
@@ -88,6 +130,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1;
+    justify-content: space-around;
   }
 
   &__left .feedback__avatar{
@@ -113,6 +157,16 @@
   &__text {
     line-height: 1.8;
     margin-bottom: 25px;
+    font-style: italic;
+    color: #5a6358;
+
+    @include tablets {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__user-name {
@@ -124,6 +178,11 @@
 
   &__left {
     margin-right: 25px;
+
+    @media screen and (max-width: 480px) {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -142,12 +201,26 @@
   background: rgba(218, 219, 214, 0.5);
   border-radius: 15px;
 
+  @include tablets {
+    width: 350px;
+    height: 445px;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    height: 425px;
+  }
+
   &__title {
     color: #373e42;
     font-size: 35px;
     font-family: 'sansus_webissimoregular';
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (max-width: 480px) {
+      font-size: 21px;
+    }
 
     &:after {
       content: '';
@@ -158,6 +231,11 @@
       margin: 0 auto;
       margin-top: 25px;
       margin-bottom: 25px;
+
+      @include tablets {
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
     }
   }
 }
@@ -169,6 +247,11 @@ input {
   margin: 0 20px;
   border: none;
   margin-bottom: 20px;
+
+  @include tablets {
+    font-size: 14px;
+  }
+
 }
 
 textarea {
@@ -180,6 +263,10 @@ textarea {
   padding: 24px 0 0.25rem 18px;
   border: none;
   margin: 0 20px 25px 20px;
+
+  @include tablets {
+    font-size: 14px;
+  }
 }
 
 .form__down-btns {
@@ -214,4 +301,9 @@ textarea {
     width: 30px;
     height: 20px;
   }
+}
+
+.feedback__user-prof {
+  font-style: italic;
+  color: #5a6358;
 }

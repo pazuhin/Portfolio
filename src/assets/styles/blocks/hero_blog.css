@@ -8,11 +8,11 @@ Error: Undefined mixin 'tablets'.
 3:   margin-bottom: 70px;
 4: 
 5:   @include tablets {
-6:     margin-bottom: 50px;
+6:     margin-bottom: 30px;
 7:   }
 8: 
 9:   @include phones {
-10:     margin-bottom: 50px;
+10:     margin-bottom: 30px;
 
 Backtrace:
 hero_blog.scss:5:in `tablets'
@@ -70,4 +70,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of hero_blog.scss, in `tablets'\A         from line 5 of hero_blog.scss\A \A 1: .hero_blog {\A 2:   min-height: 440px !important;\A 3:   margin-bottom: 70px;\A 4: \A 5:   @include tablets {\A 6:     margin-bottom: 50px;\A 7:   }\A 8: \A 9:   @include phones {\A 10:     margin-bottom: 50px;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of hero_blog.scss, in `tablets'\A         from line 5 of hero_blog.scss\A \A 1: .hero_blog {\A 2:   min-height: 440px !important;\A 3:   margin-bottom: 70px;\A 4: \A 5:   @include tablets {\A 6:     margin-bottom: 30px;\A 7:   }\A 8: \A 9:   @include phones {\A 10:     margin-bottom: 30px;"; }

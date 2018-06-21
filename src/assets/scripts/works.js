@@ -1,3 +1,5 @@
+import "./modules/slider"
+
 var menuBtn = document.querySelector('.hero__menu');
 var popap = document.querySelector('.popap-page');
 
