@@ -29,7 +29,9 @@ block content
                     .intro__blog
                         .intro__title Блог
                         .intro__desk Статьи, которые я написал
-    section.blog
+            a(href="#blog").down-btn__link
+                +icon('arrow_down','down-btn__img')
+    section.blog#blog
         .container.container_blog
             .blog__triangle-left
                 svg(viewBox="0 0 500 100" preserveAspectRatio="none").triangle.triangle_fill_left

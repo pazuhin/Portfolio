@@ -83,6 +83,7 @@ figure {
 
   @include tablets {
     margin-right: 0px;
+    margin-bottom: 25px;
   }
 
     @include phones {
@@ -92,4 +93,8 @@ figure {
 
 .skills-row__title {
   margin-bottom: 15px;
+
+  @include tablets {
+    margin-bottom: 10px;
+  }
 }

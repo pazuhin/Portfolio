@@ -236,6 +236,10 @@
         margin-top: 10px;
         margin-bottom: 15px;
       }
+
+      @media screen and (max-width: 480px) {
+        height: 2px;
+      }
     }
   }
 }
@@ -294,14 +298,31 @@ textarea {
 .feedback__down-link {
   position: absolute;
   bottom: 19%;
+  display: block;
+  width: 30px;
+  height: 20px;
 
   &:after {
-    content: url("assets/images/works/arrow_up.png");
-    display: block;
-    width: 30px;
+    background: svg-load('portf_arrow_down.svg', fill=#c2d4cb) center center no-repeat / contain;
+    content: "";
     height: 20px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(-180deg);
+    width: 30px;
+    bottom: 0;
   }
-}
+    &:hover:after {
+      background: svg-load('portf_arrow_down.svg', fill=#fff) center center no-repeat / contain;
+      content: "";
+      height: 20px;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(-180deg);
+      width: 30px;
+      bottom: 0;
+    }
+  }
 
 .feedback__user-prof {
   font-style: italic;

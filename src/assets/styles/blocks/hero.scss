@@ -45,7 +45,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -60%);
   background: url(assets/images/bg/portfolio_header.png) center center no-repeat;
   width: 100%;
   background-size: 70%;
@@ -139,22 +139,23 @@
 }
 
 
-.down-btn {
-  display: block;
+.down-btn__link {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  top: 80%;
-  margin: auto;
-  left: 0;
-  width: 30px;
-  height: 20px;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
+
 }
 
 .down-btn__img {
   width: 30px;
   fill: #c2d3ca;
   height: 20px;
+  transition: 0.3s;
+
+  &:hover {
+    fill: #fff;
+  }
 }
 
 .contacts__icon-img {

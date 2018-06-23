@@ -5,6 +5,7 @@ block variables
 
 block scripts
   script(src='about.bundle.js')
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQqV2Iecrk307iXqYW51AnGEZ8aUSU9Yo&callback=initMap"></script>
 
 block content
   section.hero
@@ -29,11 +30,10 @@ block content
             .intro__about
               .intro__name Андрей Смирнов
               .intro__desk Личный сайт веб разработчикa
-        .down-btn
-          a(href="#").down-btn__link
-            +icon('arrow_down','down-btn__img')
+        a(href="#about").down-btn__link
+          +icon('arrow_down','down-btn__img')
 
-  section.about
+  section.about#about
     .container.container_about
       .about__left
         .about__triangle
@@ -82,7 +82,7 @@ block content
                           circle(cx="60" cy="60" r="50").skill__circle.skill__circle_above
                         .skill__title=`${skill[0]}`
 
-  section.map
+  section.map#map
     .container.container_map
       .google-map
         .map__info
@@ -122,6 +122,7 @@ block content
               p Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете. <br> <span class="text">— Martin Golding</span>
       .sign(class="map__sign") © Смирнов Андрей | создано с любовью в LoftSchool | 2018
   include ../../sections/popap
+
 
 
 

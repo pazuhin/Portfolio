@@ -8,7 +8,7 @@ block scripts
     script(src='works.bundle.js')
 
 block content
-    section.hero.hero_works
+    section.hero.hero_works#hero
         .container.container_hero
             -
                 var socials = [
@@ -30,9 +30,8 @@ block content
                     .intro__about
                         .intro__name Андрей Смирнов
                         .intro__desk Личный сайт веб разработчикa
-            .down-btn
-                a(href="#").down-btn__link
-                    +icon('arrow_down','down-btn__img')
+            a(href="#slider-block").down-btn__link
+                +icon('arrow_down','down-btn__img')
 
     .works
         .works__title Мои работы
@@ -41,7 +40,7 @@ block content
             <polygon points="0 0, 500 100, 0 100"/> fill="#DDF5FF"/>
         svg(viewBox="0 0 500 100").triangle.triangle_fill_right
             <polygon points="500 0, 500 100, 0 100"/> fill="#DDF5FF"/>
-    .slider-container
+    .slider-container#slider-block
         #slider-component
     section.feedback
         .feedback__up
@@ -68,7 +67,7 @@ block content
                 .form__down-btns
                     button(type="submit" value="" class="submit" name="submit-btn") Отправить
                     button(type="reset" value="" name="btn-clear" class="reset") Очистить
-            a(href="#", class="feedback__down-link")
+            a(href="#hero", class="feedback__down-link")
         footer.footer.footer_blog
             .container.footer_container
                 .footer__col
