@@ -27,11 +27,11 @@
 
 .skill__circle_above {
   stroke: #74a163;
-  stroke-dasharray: 251;
-  stroke-dashoffset: 50;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
 }
 
-.skills-row__list {
+.skills {
   display: flex;
   flex-wrap: wrap;
 
@@ -60,7 +60,7 @@
   text-align: center;
 }
 
-.skills-row__title {
+.skills-list__title {
   font-size: 28px;
   color: #566358;
 
@@ -77,7 +77,7 @@ figure {
   margin: 0;
 }
 
-.skills-row__item {
+.skills-list__item {
   margin-right: 40px;
   margin-bottom: 30px;
 
@@ -91,10 +91,17 @@ figure {
   }
 }
 
-.skills-row__title {
+.skills-list__title {
   margin-bottom: 15px;
 
   @include tablets {
     margin-bottom: 10px;
   }
 }
+
+.skills-row {
+  display: flex;
+  flex-direction: column;
+}
+
+

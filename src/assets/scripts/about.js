@@ -1,4 +1,4 @@
-import "./modules/slider";
+import "./modules/skills";
 
 var menuBtn = document.querySelector('.hero__menu');
 var popap = document.querySelector('.popap-page');

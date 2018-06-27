@@ -1,6 +1,7 @@
 .container_blog {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .sidebar {
@@ -10,10 +11,16 @@
 .blog__left {
   width: 40%;
   max-width: 11.875rem;
+  flex: 1;
 
   @include tablets {
     display: none;
   }
+}
+
+.nav-blog {
+  position: sticky;
+  top: .625rem;
 }
 
 .blog__right {
@@ -24,6 +31,7 @@
   text-align: left;
   margin-top: -5px;
   max-width: 980px;
+  flex: 1;
 
   @include tablets {
     margin-top: 0;
@@ -36,6 +44,10 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+}
+
+.blog-content__item {
+  height: 100%;
 }
 
 .blog-content__lilte {
@@ -159,4 +171,6 @@
 .intro__blog .intro__desk {
   width: 205px;
 }
+
+
 

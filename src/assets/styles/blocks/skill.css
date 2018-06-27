@@ -4,7 +4,7 @@ Error: Undefined mixin 'tablets'.
         from line 38 of skill.scss
 
 33: 
-34: .skills-row__list {
+34: .skills {
 35:   display: flex;
 36:   flex-wrap: wrap;
 37: 
@@ -71,4 +71,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 38 of skill.scss, in `tablets'\A         from line 38 of skill.scss\A \A 33: \A 34: .skills-row__list {\A 35:   display: flex;\A 36:   flex-wrap: wrap;\A 37: \A 38:   @include tablets {\A 39:      justify-content: space-around;\A 40:      flex-wrap: wrap;\A 41:    }\A 42: \A 43:   @include phones {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 38 of skill.scss, in `tablets'\A         from line 38 of skill.scss\A \A 33: \A 34: .skills {\A 35:   display: flex;\A 36:   flex-wrap: wrap;\A 37: \A 38:   @include tablets {\A 39:      justify-content: space-around;\A 40:      flex-wrap: wrap;\A 41:    }\A 42: \A 43:   @include phones {"; }

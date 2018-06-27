@@ -63,24 +63,7 @@ block content
         .about__right-description.text-content
           p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
         .about__right-content
-          -
-            var skills = [
-              ['Frontend',[['HTML5', 30], ['CSS3', 70], ['JavaScript & jQuery']]],
-              ['Backend',[['PHP', 30], ['MySQL', 70], ['Node.js & npm', 50], ['Mongo.db',]]],
-              ['Workflow',[['Git', 30], ['Gulp', 70], ['Bower', 50]]]
-            ]
-          ul.skills-list
-            each skillrow in skills
-              li.skills-list__item.skills-row
-                .skills-row__title=`${skillrow[0]}`
-                ul.skills-row__list
-                  each skill in skillrow[1]
-                    li.skills-row__item
-                      figure.skill
-                        svg(viewbox="0 0 120 120" preserveAspectRatio="none").skill__figure
-                          circle(cx="60" cy="60" r="50").skill__circle.skill__circle_under
-                          circle(cx="60" cy="60" r="50").skill__circle.skill__circle_above
-                        .skill__title=`${skill[0]}`
+          #skills-container
 
   section.map#map
     .container.container_map
