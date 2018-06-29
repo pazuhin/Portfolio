@@ -1,12 +1,15 @@
+.works {
+  position: relative; }
+
 .works .triangle_fill_left {
   position: absolute;
-  bottom: 0;
+  bottom: 100%;
   width: 50%;
   fill: white; }
 
 .works .triangle_fill_right {
   position: absolute;
-  bottom: 0;
+  bottom: 100%;
   width: 50%;
   fill: white;
   right: 0; }

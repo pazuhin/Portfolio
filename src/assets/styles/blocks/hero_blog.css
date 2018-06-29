@@ -1,22 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 5 of hero_blog.scss, in `tablets'
-        from line 5 of hero_blog.scss
+        on line 19 of hero_blog.scss, in `tablets'
+        from line 19 of hero_blog.scss
 
-1: .hero_blog {
-2:   min-height: 440px !important;
-3:   margin-bottom: 70px;
-4: 
-5:   @include tablets {
-6:     margin-bottom: 30px;
-7:   }
-8: 
-9:   @include phones {
-10:     margin-bottom: 30px;
+14:   font-size: 63px;
+15:   font-family: 'sansus_webissimoregular';
+16:   color: #fff;
+17:   text-transform: uppercase;
+18: 
+19:   @include tablets {
+20:     font-size: 49px;
+21:   }
+22: 
+23:   &:after {
+24:     content: '';
 
 Backtrace:
-hero_blog.scss:5:in `tablets'
-hero_blog.scss:5
+hero_blog.scss:19:in `tablets'
+hero_blog.scss:19
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
@@ -70,4 +71,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of hero_blog.scss, in `tablets'\A         from line 5 of hero_blog.scss\A \A 1: .hero_blog {\A 2:   min-height: 440px !important;\A 3:   margin-bottom: 70px;\A 4: \A 5:   @include tablets {\A 6:     margin-bottom: 30px;\A 7:   }\A 8: \A 9:   @include phones {\A 10:     margin-bottom: 30px;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 19 of hero_blog.scss, in `tablets'\A         from line 19 of hero_blog.scss\A \A 14:   font-size: 63px;\A 15:   font-family: 'sansus_webissimoregular';\A 16:   color: #fff;\A 17:   text-transform: uppercase;\A 18: \A 19:   @include tablets {\A 20:     font-size: 49px;\A 21:   }\A 22: \A 23:   &:after {\A 24:     content: '';"; }

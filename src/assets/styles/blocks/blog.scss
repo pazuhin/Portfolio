@@ -1,3 +1,16 @@
+.blog {
+  position: relative;
+  padding-top: 70px;
+
+  @include tablets {
+    padding-top: 30px;
+  }
+
+  @include phones {
+    padding-top: 20px;
+  }
+}
+
 .container_blog {
   display: flex;
   flex-direction: row;
@@ -157,11 +170,11 @@
   left: 0;
   position: absolute;
   width: 50%;
-  bottom: 0;
+  bottom: 100%;
 }
 
 .blog__triangle-right .triangle_fill_right {
-  bottom: 0;
+  bottom: 100%;
   fill: #fff;
   position: absolute;
   right: 0;

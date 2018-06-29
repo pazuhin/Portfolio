@@ -1,14 +1,5 @@
 .hero_blog {
   min-height: 440px !important;
-  margin-bottom: 70px;
-
-  @include tablets {
-    margin-bottom: 30px;
-  }
-
-  @include phones {
-    margin-bottom: 20px;
-  }
 }
 
 .hero__user_blog {

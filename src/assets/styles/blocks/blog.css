@@ -1,23 +1,22 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 16 of blog.scss, in `tablets'
-        from line 16 of blog.scss
+        on line 5 of blog.scss, in `tablets'
+        from line 5 of blog.scss
 
-11: .blog__left {
-12:   width: 40%;
-13:   max-width: 11.875rem;
-14:   flex: 1;
-15: 
-16:   @include tablets {
-17:     display: none;
-18:   }
-19: }
-20: 
-21: .nav-blog {
+1: .blog {
+2:   position: relative;
+3:   padding-top: 70px;
+4: 
+5:   @include tablets {
+6:     padding-top: 30px;
+7:   }
+8: 
+9:   @include phones {
+10:     padding-top: 20px;
 
 Backtrace:
-blog.scss:16:in `tablets'
-blog.scss:16
+blog.scss:5:in `tablets'
+blog.scss:5
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
@@ -71,4 +70,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 16 of blog.scss, in `tablets'\A         from line 16 of blog.scss\A \A 11: .blog__left {\A 12:   width: 40%;\A 13:   max-width: 11.875rem;\A 14:   flex: 1;\A 15: \A 16:   @include tablets {\A 17:     display: none;\A 18:   }\A 19: }\A 20: \A 21: .nav-blog {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of blog.scss, in `tablets'\A         from line 5 of blog.scss\A \A 1: .blog {\A 2:   position: relative;\A 3:   padding-top: 70px;\A 4: \A 5:   @include tablets {\A 6:     padding-top: 30px;\A 7:   }\A 8: \A 9:   @include phones {\A 10:     padding-top: 20px;"; }

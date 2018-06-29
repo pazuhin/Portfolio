@@ -12,13 +12,14 @@ body {
 }
 
 .wrapper {
-  height: 100%;
+  min-height: 100%;
   position: relative;
   scroll-behavior: smooth;
 }
 
 .maincontent {
   height: 100%;
+  width: 100%;
 }
 
 .container {
