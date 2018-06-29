@@ -17,14 +17,16 @@ block content
                         form.form-welcome
                             .form-welcome__title Авторизуйтесь
                             .form__col
-                                input(type="text" value="" name="name" placeholder='Логин')
                                 .login
                                     +icon('login', 'form__login')
+                                input(type="text" value="" id="login" name="name" placeholder='Логин' onload="focus()")
+                                span.drop-err Вы не ввели логин
                                 .bg
                             .form__col
-                                input(type="password" value="" name="name" placeholder='Пароль')
                                 .password
-                                    +icon('password', 'form__login')
+                                    +icon('password', 'form__pass')
+                                input(type="password" id="pass" value="" name="name" placeholder='Пароль')
+                                span.drop-err Вы не ввели пароль
                                 .bg
                             .form__col
                                 label
@@ -42,7 +44,12 @@ block content
                                     input(type="radio" value="no" id="radio-btn-1" name="radio1" class="radio")
                                     span.radio-custom
                                     span Не уверен
-                        +nav('nav', [['На главную', 'index.html', 'auth'],['Войти']])
+                        nav.nav
+                            ul.nav__list
+                                li.nav__item
+                                    a(href="index.html" id="auth" class="nav__link") На главную
+                                li.nav__item
+                                    button(type="submit" class="nav__link" value="Отправить") Войти
             .sign(class="welcome__sign") © Смирнов Андрей | создано с любовью в LoftSchool | 2018
             +auth_btn('auth_btn')
 

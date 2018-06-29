@@ -1,4 +1,4 @@
-import  scrollPag from "./modules/nav-menu.js"
+import  scrollPag from "./modules/nav-menu-scroll.js"
 import "./modules/nav-menu-click.js"
 
 scrollPag();

@@ -1,6 +1,7 @@
 const links = document.querySelectorAll("[href^='#']");
 const V = 0.6; // scrolling speed
 
+
 for (const iter of links) {
     iter.addEventListener("click", e => {
         e.preventDefault();
@@ -8,7 +9,7 @@ for (const iter of links) {
                 iter.classList.remove("is-active");
             }
                 e.target.classList.add("is-active");
-      const anchor = document.querySelector(iter.getAttribute("href"));
+        const anchor = document.querySelector(iter.getAttribute("href"));
         const coordAnchor = anchor.getBoundingClientRect().top;
         const windowY = window.pageYOffset;
 
@@ -30,9 +31,7 @@ for (const iter of links) {
                 requestAnimationFrame(step);
             }
         }
-
-
-    });
+   });
 }
 
 

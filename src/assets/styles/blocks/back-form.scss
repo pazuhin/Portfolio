@@ -115,20 +115,21 @@
   }
 }
 
-.form__login {
+.form__login, .form__pass {
   width: 15px;
   height: 15px;
   fill: #c4cbcd;
 }
 
 .bg {
-  width: 45px;
-  height: 46px;
   background-color: #f0efe9;
-  position: absolute;
-  left: 20px;
   border-bottom-left-radius: 50%;
   border-top-left-radius: 50%;
+  height: 45px;
+  left: 21px;
+  position: absolute;
+  width: 45px;
+  top: 1px;
 }
 
 .login {
@@ -143,4 +144,70 @@
   left: 10%;
   z-index: 5;
   top: 25%;
+}
+
+.drop-err {
+  width: 170px;
+  height: 45px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #e44845;
+  top: 60px;
+  z-index: 10;
+  text-align: center;
+  padding: 3% 0;
+  font-weight: 400;
+  left: 17%;
+  display: none;
+  font-size: 14px;
+
+  &:after {
+    border-color: transparent transparent #e44845;
+    border-style: solid;
+    border-width: 0 12px 10px;
+    bottom: 45px;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    transform: translateX(-50%);
+  }
+}
+
+button {
+  outline: none;
+}
+
+.active {
+  box-shadow: 0 0 20px rgb(89%, 28%, 27%, 1);
+}
+
+.drop-err.is-active {
+   display: block;
+}
+
+.login.is-active {
+  .form__login {
+    fill: #e44845;
+  }
+}
+
+.password.is-active {
+  .form__pass {
+    fill: #e44845;
+  }
+}
+
+.login.onfocus{
+  .form__login {
+    fill: #6c9c5a;
+  }
+}
+
+.password.onfocus{
+  .form__pass {
+    fill: #6c9c5a;
+  }
 }

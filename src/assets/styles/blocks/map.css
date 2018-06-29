@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 27 of map.scss, in `tablets'
-        from line 27 of map.scss
+        on line 32 of map.scss, in `tablets'
+        from line 32 of map.scss
 
-22:   min-height: 100%;
-23:   display: flex;
-24:   flex-direction: column;
-25:   border-radius: 10px;
-26: 
-27:   @include tablets {
-28:     width: 350px;
-29:   }
-30: 
-31:   @include phones {
-32:     max-width: 100%;
+27:   position: absolute;
+28:   top: 10%;
+29:   transform: translateX(-50%);
+30:   width: 380px;
+31: 
+32:   @include tablets {
+33:     width: 350px;
+34:   }
+35: 
+36:   @media screen and (max-width: 480px){
+37:    left: 50%;
 
 Backtrace:
-map.scss:27:in `tablets'
-map.scss:27
+map.scss:32:in `tablets'
+map.scss:32
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
@@ -71,4 +71,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 27 of map.scss, in `tablets'\A         from line 27 of map.scss\A \A 22:   min-height: 100%;\A 23:   display: flex;\A 24:   flex-direction: column;\A 25:   border-radius: 10px;\A 26: \A 27:   @include tablets {\A 28:     width: 350px;\A 29:   }\A 30: \A 31:   @include phones {\A 32:     max-width: 100%;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 32 of map.scss, in `tablets'\A         from line 32 of map.scss\A \A 27:   position: absolute;\A 28:   top: 10%;\A 29:   transform: translateX(-50%);\A 30:   width: 380px;\A 31: \A 32:   @include tablets {\A 33:     width: 350px;\A 34:   }\A 35: \A 36:   @media screen and (max-width: 480px){\A 37:    left: 50%;"; }
