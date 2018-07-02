@@ -1,5 +1,6 @@
 import "./modules/form-valid";
 import "./modules/focus-form";
+import "./modules/preloader.js";
 
 
 
@@ -14,7 +15,7 @@ authBtn.addEventListener('click', function (e) {
     e.preventDefault();
     authBtnBlock.classList.add("hidden");
     flip.classList.add("active_flip");
-})
+});
 
 inroBack.addEventListener('click', function (e) {
     e.preventDefault();

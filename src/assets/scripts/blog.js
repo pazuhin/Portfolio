@@ -1,6 +1,7 @@
-import  scrollPag from "./modules/nav-menu-scroll.js"
-import "./modules/nav-menu-click.js"
+import "./modules/nav-menu-click.js";
+import "./modules/preloader.js";
 
+import  scrollPag from "./modules/nav-menu-scroll.js"
 scrollPag();
 
 var menuBtn = document.querySelector('.hero__menu');
