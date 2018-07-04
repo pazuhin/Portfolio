@@ -1,0 +1,44 @@
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  background: url("../assets/images/forest.jpg") center center no-repeat/cover;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Arial"; }
+  .wrapper:after {
+    content: '';
+    background: #rgba 219, 226, 225, 0.9;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%; }
+
+.title {
+  background: #6c9c5a;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  align-items: center; }
+
+.title__text {
+  font-size: 22px;
+  color: #fff;
+  font-family: "Arial"; }
+
+.title__link-back {
+  text-decoration: none;
+  font-size: 16px;
+  color: #d3e1ce;
+  font-family: "Arial";
+  font-weight: 300; }
+  .title__link-back:hover {
+    color: #fff; }
+
+/*# sourceMappingURL=title.css.map */
