@@ -12,6 +12,14 @@ mixin nav(className, items, activeItem)
             li(class=`${className}__item` + ( (ndx===activeItem ) ? ` ${className}__item_active` : '' ) )
                 a(class=`${className}__link` href=`${item[1]}` id=`${item[2]}`)= item[0]
 
+mixin nav-blog(className, items, activeItem)
+    nav(class=`${className}`)
+        ul(class=`${className}__list`)
+            each item, ndx in items
+                li(class=`${className}__item` + ((ndx === activeItem) ? ` ${className}__item_active` : '') )
+                    a(class=`${className}__link` href=`${item[1]}` id=`${item[2]}`)= item[0]
+            a(href="#" class="nav-blog__trigger")
+
 
 mixin sign(className)
     .sign(class=`${className}`) © Смирнов Андрей | создано с любовью в LoftSchool | 2018
