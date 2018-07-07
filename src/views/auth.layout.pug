@@ -12,9 +12,8 @@ html(lang="en")
     include ./components/preloader.pug
     block content
 
-    script(src="./bootloader.bundle.js")
-    script(src="./auth.bundle.js")
 
-    //<script async defer
-    //  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-    //</script>
+    include ./components/entry.pug
+    script(src="./bootloader.bundle.js")
+    script(src="vendor.bundle.js")
+    script(src="./auth.bundle.js")
