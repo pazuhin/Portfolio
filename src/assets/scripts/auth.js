@@ -1,7 +1,7 @@
 import "./modules/form-valid";
 import "./modules/login";
 // import "./modules/focus-form";
-//import "./modules/loader.js";
+import "./modules/loader.js";
 
 //flip
 var authBtn = document.querySelector(".auth_btn__link");

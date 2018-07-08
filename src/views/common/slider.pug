@@ -17,8 +17,7 @@ script(type="text/x-template")#slider-info
         .slider__about
             .slider__info
                 .slider__info-title
-                    transition-group(appear name="subtitle" tag="div").subtitle
-                        h2(:key="work.title") {{work.title}}
+                    .subtitle {{work.title}}
                 transition-group(
                     appear
                     :css="false"

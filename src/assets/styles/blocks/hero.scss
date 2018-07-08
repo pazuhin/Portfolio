@@ -162,6 +162,12 @@
   height: 27px;
   width: 25px;
   fill: #6c9c5a;
+
+  @media screen and (max-width: 480px) {
+    fill: #6c9c5a;
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .hero__menu.active {
