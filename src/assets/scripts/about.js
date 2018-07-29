@@ -1,5 +1,5 @@
 
-import "./modules/loader.js";
+//import "./modules/loader.js";
 import "./modules/skills";
 import "./modules/nav-menu-click.js";
 import "./modules/map.js";
